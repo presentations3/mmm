@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Качественные презентации — Портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#6ee7b7;
+  --accent2:#4dd0e1;
+  --muted:#9aa6b2;
+  --glass: rgba(255,255,255,0.03);
+  --radius:14px;
+  --max:1100px;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter,system-ui,Segoe UI,Arial;
+  background: linear-gradient(-45deg, #0f1724, #071021, #0b1220, #0f1724);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color:#e6eef6;
+  margin:0;
+  line-height:1.45;
+}
+@keyframes gradientBG{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.wrap{max-width:var(--max);margin:32px auto;padding:24px}
+header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#062027;transition: transform 0.3s;}
+.logo:hover{transform: rotate(15deg);}
+h1{font-size:20px;margin:0}
+p.lead{color:var(--muted);margin:6px 0 0}
+nav{display:flex;gap:12px}
+a.btn{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#062027;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;transition: transform 0.3s, box-shadow 0.3s;}
+a.btn:hover{transform: translateY(-3px); box-shadow:0 10px 20px rgba(0,0,0,0.4);}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;margin:28px 0}
+.hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:24px;border-radius:18px;box-shadow:0 6px 30px rgba(3,6,12,0.6);margin-bottom: 24px;}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+.thumb{border-radius:12px;background: var(--glass);padding: 16px;text-align: center;border: 1px solid rgba(255,255,255,0.05);transition: 0.3s;}
+.thumb:hover{transform: translateY(-5px); background: rgba(255,255,255,0.07);}
+.thumb .caption{margin-bottom:12px;font-weight:600; font-size: 15px;}
+.thumb a{display:inline-block;color:var(--accent2);text-decoration:none; font-size: 14px;}
+.prices{display:flex;flex-direction: column; gap:16px;margin-top:18px}
+.card{background:var(--glass);padding:20px;border-radius:16px;border: 1px solid rgba(255,255,255,0.05);}
+.price{font-size:24px;font-weight:700;margin:10px 0; color: var(--accent);}
+.list{color:var(--muted);font-size: 13px; margin-bottom: 15px;}
+.order{display:flex;gap:8px;}
+.ghost{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:8px 12px;border-radius:10px;color:#fff;text-decoration:none; font-size: 13px; transition: 0.3s;}
+.ghost:hover{background: var(--accent); color: #000;}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+
+/* Новая градиентная кнопка */
+.btn-grad {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #062027;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(110, 231, 183, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.btn-grad:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(110, 231, 183, 0.4);
+  filter: brightness(1.1);
+}
+.btn-grad:active { transform: translateY(0); }
+.btn-grad:disabled { background: var(--muted); opacity: 0.6; cursor: not-allowed; }
+
+footer{margin-top:48px;color:var(--muted);font-size:13px;text-align:center; padding-bottom: 24px;}
+@media (max-width:900px){.hero, .split{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <div class="logo">IT</div>
+    <div>
+      <h1>Цифровые решения для учебы</h1>
+      <p class="lead">Презентации на заказ и профессиональная настройка Linux систем.</p>
+    </div>
+  </div>
+  <nav><a class="btn" href="#contact">Заказать</a></nav>
+</header>
+
+<section class="hero">
+  <div class="content-area">
+    <div class="hero-card">
+      <h2>Портфолио презентаций</h2>
+      <div class="gallery">
+        <div class="thumb">
+          <div class="caption">Бурладские песни</div>
+          <a href="https://docs.google.com/presentation/d/1Nd-B0o2ZcBrWPWGZ34GWRz5qMLJsepEh/edit?usp=sharing" target="_blank">🔗 Посмотреть работу</a>
+        </div>
+        <div class="thumb">
+          <div class="caption">Джек Лондон</div>
+          <a href="https://docs.google.com/presentation/d/1_Pkkxug6A3Aj3GGTlxekNYMif6b6hZ0s/edit?usp=sharing&ouid=115590729268244529233&rtpof=true&sd=true" target="_blank">🔗 Посмотреть работу</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h2>Linux & OS Solutions 🐧</h2>
+      <p class="muted">Хочешь, чтобы твой старый ноутбук летал? Продаю готовые решения на флешках.</p>
+      <div class="prices">
+        <div class="card">
+          <div style="font-weight: 800;">Загрузочная флешка с Linux</div>
+          <div class="price">от 450 ₽</div>
+          <div class="list">
+            • Подбор дистрибутива (Zorin OS, Mint, Pop!_OS)<br>
+            • Консультация по установке<br>
+            • Софт для учебы уже внутри
+          </div>
+          <div class="order"><a class="ghost" href="#contact">Заказать флешку</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="hero-card">
+      <h3>Прайс на услуги</h3>
+      <div class="prices">
+        <div class="card">
+          <div style="font-weight: 800;">Обычная презентация</div>
+          <div class="price">60 ₽</div>
+          <div class="list">6 слайдов • Дизайн • 1-2 дня работы</div>
+          <div class="order"><a class="ghost" href="#contact">Заказать</a></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<section class="split">
+  <div class="hero-card" id="contact">
+    <h3>Сделать заказ</h3>
+    <form id="orderForm" action="https://script.google.com/macros/s/AKfycbwbnmxcxZRf6uH6kHA5KJo9IIjraA2Bigbqibo8MAQ6LGvSKNbgeseiluaTkYdMwU8A/exec" method="POST">
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:16px">
+        <input name="name" placeholder="Твое имя" required style="padding:12px;border-radius:10px;border:none;background:var(--glass);color:#fff">
+       
+        <input name="contact"
+               placeholder="Твой TG или Телефон (для дальнейшей связи)"
+               required
+               pattern="^(@[a-zA-Z0-9_]{4,}|(\+7|8)[0-9]{10})$"
+               title="Введите корректный Telegram (@user) или номер телефона (11 цифр)"
+               style="padding:12px;border-radius:10px;border:none;background:var(--glass);color:#fff">
+       
+        <select name="topic" style="padding:12px;border-radius:10px;border:none;background:var(--card);color:#fff">
+          <option value="Презентация">Нужна презентация</option>
+          <option value="Linux-флешка">Нужна флешка с Linux</option>
+          <option value="Другое">Другой вопрос</option>
+        </select>
+        <textarea name="message" placeholder="Опиши задачу" style="padding:12px;border-radius:10px;border:none;background:var(--glass);color:#fff;min-height:100px"></textarea>
+       
+        <button type="submit" id="submitBtn" class="btn-grad">Отправить заявку</button>
+      </div>
+    </form>
+    <div id="successMsg" style="display:none; color:var(--accent); margin-top:15px; font-weight:600;">✅ Заявка отправлена! Я скоро свяжусь с тобой.</div>
+  </div>
+
+  <div class="hero-card">
+    <h3>Почему я?</h3>
+    <ul class="muted" style="padding-left: 20px; line-height: 2;">
+      <li>Сам учусь и знаю современные требования к работам</li>
+      <li>Работаю в Linux и разбираюсь в открытом ПО</li>
+      <li>Делаю аккуратно: без лишнего текста и "вырвиглазных" цветов</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Презентации и IT-услуги. Контакт: presentationwork14@gmail.com</div>
+</footer>
+</div>
+
+<script>
+  const form = document.getElementById('orderForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const msg = document.getElementById('successMsg');
+    btn.innerText = 'Отправка...';
+    btn.disabled = true;
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      mode: 'no-cors'
+    }).then(() => {
+      msg.style.display = 'block';
+      form.reset();
+      btn.innerText = 'Отправить заявку';
+      btn.disabled = false;
+    }).catch(err => {
+      console.error(err);
+      btn.innerText = 'Ошибка отправки';
+      btn.disabled = false;
+    });
+  });
+</script>
+</body>
+</html>
